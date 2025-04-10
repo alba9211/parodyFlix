@@ -1,10 +1,13 @@
 import React from 'react';
 
+import { Header } from './Header.tsx';
+
 function App() {
   const [count, setCount] = React.useState(0);
 
   return (
     <>
+      <Header />
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount(count => count + 1)}>
